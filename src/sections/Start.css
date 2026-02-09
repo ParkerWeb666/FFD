@@ -3,11 +3,77 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 90vh;
   text-align: center;
   gap: 20px;
-  background-color: #020618;
+  /* background-color: #020618; */
+  background-color: linear-gradient(
+    90deg,
+    rgb(6, 7, 10) 1000%,
+    rgb(0, 2, 10) 100%
+  );
+
   margin: 0 auto;
+}
+
+.glare1 {
+  position: absolute;
+  width: 456px;
+  height: 456px;
+  background: radial-gradient(circle, rgba(173, 70, 255, 0.2), transparent);
+  bottom: 0%;
+  left: 0%;
+  filter: blur(100px);
+  z-index: -1;
+  animation: glare1 6s ease-in-out infinite;
+}
+
+.glare2 {
+  position: absolute;
+  width: 456px;
+  height: 456px;
+  background: radial-gradient(circle, rgba(0, 184, 219, 0.1), transparent);
+  top: 70%;
+  right: 30%;
+  filter: blur(100px);
+  z-index: -1;
+  animation: glare2 5s ease-in-out infinite;
+}
+
+.glare3 {
+  position: absolute;
+  width: 456px;
+  height: 456px;
+  background: radial-gradient(circle, rgba(173, 70, 255, 0.2), transparent);
+  top: 0;
+  right: 0;
+  filter: blur(100px);
+  z-index: -1;
+  animation: glare2 5s ease-in-out infinite;
+}
+
+@keyframes glare1 {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-40px) scale(1.1);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes glare2 {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(40px) scale(1.1);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
 }
 
 h1 {
@@ -38,32 +104,42 @@ p {
 
   background: linear-gradient(90deg, #ff00cc, #3333ff, #9303a7, #ff00cc);
   background-size: 300%;
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-button {
+.primary-button,
+.secondary-button {
   border-radius: 8px;
   border: 0 solid;
+  width: 165px;
+  height: 40px;
+  z-index: 1001;
 }
 
 .primary-button {
-  padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
-  /* font-family: inherit; */
   background: linear-gradient(90deg, #155dfc, #9810fa);
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .secondary-button {
   background: #fff;
   color: #1d293d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .start-buttons {
   display: flex;
   gap: 10px;
+  margin: 24px 0;
 }
 
 .gradient-console {
@@ -100,16 +176,14 @@ button {
   width: 552px;
   height: 242px;
   border-radius: 16px;
-  /* background: linear-gradient(100deg, #1d293d, #0f172b); */
+  background: linear-gradient(100deg, #1d293d, #0f172b);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 24px;
   box-sizing: border-box;
-
   position: relative;
   z-index: 1;
-  background: rgba(6, 10, 25, 0.9);
   border-radius: 18px;
   padding: 28px 32px;
   backdrop-filter: blur(6px);
@@ -226,3 +300,28 @@ button {
     box-shadow: 0 0 25px rgba(43, 127, 255, 0.5);
   }
 }
+
+/* @media (max-width: 768px) {
+  .start {
+    flex-direction: column;
+    padding: 20px;
+    gap: 40px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  .gradient-console {
+    width: 100%;
+    height: auto;
+  }
+
+  .base-console {
+    width: 100%;
+  }
+
+  .console {
+    width: 100%;
+  }
+} */

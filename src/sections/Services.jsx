@@ -1,8 +1,10 @@
 function services() {
     return (
-        <div>
-            
-        </div>
+        <section>
+            <h2>
+                {/* Услуги */}
+            </h2>
+        </section>
     )
 }
 

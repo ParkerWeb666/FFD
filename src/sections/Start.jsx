@@ -1,17 +1,22 @@
 import { motion } from "motion/react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { nightOwl } from "react-syntax-highlighter/dist/esm/styles/prism";
-
+import FloatingCode from "../components/ui/floatingCode.jsx";
+import Button from "../components/ui/button.jsx";
 import React from "react";
 import "./Start.css";
 
 const Start = () => {
   return (
     <section className="start">
+      <div className="glare1"></div>
+      <div className="glare2"></div>
+      <div className="glare3"></div>
+      <FloatingCode />
       <div className="left-side">
         <h1>
           Превращаю <br />
-          идеи в{" "}
+          идеи в
         </h1>
         <motion.h1
           className="gradient-text"
@@ -31,7 +36,7 @@ const Start = () => {
             className="primary-button"
             whileHover={{
               scale: 1.1,
-              boxShadow: "0px 10px 8px rgb(41, 212, 255)",
+              boxShadow: "0px 5px 8px rgb(41, 212, 255, 0.5)",
             }}
             whileTap={{ scale: 0.95 }}
             //   onHoverStart={() => console.log("hover started!")}
@@ -51,6 +56,7 @@ const Start = () => {
             Посмотреть работы
           </motion.button>
         </div>
+        <Button />
       </div>
       <div className="right-side">
         <div className="gradient-console">
