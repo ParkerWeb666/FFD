@@ -6,7 +6,7 @@ import Button from "../components/ui/button.jsx";
 import React from "react";
 import "./Start.css";
 
-const Start = () => {
+function Start () {
   return (
     <section className="start">
       <div className="glare1"></div>
