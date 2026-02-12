@@ -1,7 +1,7 @@
-import Tg from "@/assets/icons/tg.svg?react";
-import Mail from "@/assets/icons/mail.svg?react";
-import Github from "@/assets/icons/github.svg?react";
 import { motion } from "motion/react";
+import Github from "../../assets/icons/github.svg?react";
+import Mail from "../../assets/icons/mail.svg?react";
+import Tg from "../../assets/icons/tg.svg?react";
 
 import React from "react";
 import "./button.css";

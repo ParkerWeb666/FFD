@@ -1,5 +1,62 @@
+.services-container {
+  background-color: #0f172b;
+  display: flex;
+  justify-content: center;
+}
 .services {
-  background-color: #0F172B;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
   height: 90vh;
   width: 100%;
+  gap: 64px;
+  max-width: 1280px;
+  overflow: hidden;
+
+
+}
+
+h2 {
+  font-size: 45px;
+  margin: 0 auto;
+  color: #fff;
+  z-index:1;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.description {
+  font-size: 18px;
+  color: #90a1b9;
+}
+
+.cards {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr 1fr 1fr;
+  z-index:1;
+}
+
+.card h3 {
+  color: #fff;
+}
+
+.dots-bg {
+  position: absolute;
+  inset: 0;
+  z-index:0;
+
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.15) 1px,
+    transparent 1px
+  );
+  background-size: 40px 40px;
 }
