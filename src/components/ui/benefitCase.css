@@ -1,0 +1,32 @@
+.benefit-case {
+  width: 362px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap:16px;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+}
+
+.benefit-icon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: var(--hover-bg);
+
+}
+
+.benefit-case h3 {
+  color: #F8F9FB;
+}
+
+.benefit-case p {
+  color: #90A1B9;
+  font-size: 14.8px;
+}

@@ -1,9 +1,7 @@
 .card {
   display: flex;
-  /* align-items: start; */
   flex-direction: column;
-  width: 369px;
-  /* height: 228px; */
+  width: 368px;
   border-radius: 14px;
   background-color: #162034;
   padding: 29px;
@@ -11,7 +9,7 @@
   border: #314158 1px solid;
   box-sizing: border-box;
   overflow: hidden;
-  /* transition: background 0.25s ease, transform 0.25s ease; */
+  cursor: pointer;
 }
 
 .card:hover {

@@ -1,0 +1,56 @@
+.review-container {
+    background-color: #0F172B;
+  position: relative;
+
+}
+
+.review h2 {
+    color: #F8F9FB;
+}
+.review p {
+    color: #90A1B9;
+}
+
+.review-head {
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    gap: 16px;
+}
+
+
+.review {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.review-cases{
+    display: flex;
+    gap:34px;
+    margin-bottom: 80px;
+}
+
+.lines-bg {
+  position: absolute;
+  inset: 0;
+  z-index:0;
+
+  background-image: repeating-linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255,255,255,0.05) 1px,
+      transparent 1px,
+      transparent 40px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      rgba(255,255,255,0.05) 0px,
+      rgba(255,255,255,0.05) 1px,
+      transparent 1px,
+      transparent 40px
+    )
+    ;
+
+}

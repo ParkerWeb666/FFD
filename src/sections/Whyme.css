@@ -1,0 +1,66 @@
+.whyme-container {
+  background-color: #020618;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+}
+.whyme {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  overflow-y: hidden;
+  /* max-width: 1280px;
+  width: 100%; */
+  overflow-x: hidden;
+  padding: 0;
+}
+.whyme h2 {
+  color: #fff;
+}
+.whyme p {
+  color: #cad5e2;
+}
+
+.whyme-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 1280px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.back-glare1 {
+  position: absolute;
+  width: 456px;
+  height: 456px;
+  background: radial-gradient(circle, rgba(21, 93, 252, 0.3), transparent);
+  left: 20%;
+  top: 10%;
+  filter: blur(100px);
+  z-index: 1;
+}
+
+.back-glare2 {
+  position: absolute;
+  width: 456px;
+  height: 456px;
+  background: radial-gradient(circle, rgba(173, 70, 255, 0.2), transparent);
+  right: 20%;
+  bottom: 5%;
+  filter: blur(100px);
+  z-index: 1;
+}

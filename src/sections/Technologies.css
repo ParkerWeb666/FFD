@@ -1,0 +1,32 @@
+.technologies-container {
+    background-color: #fff;
+
+}
+
+.technologies h2 {
+    color: #0F172B;
+}
+.technologies p {
+    color: #45556C;
+}
+
+.tech-head {
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    gap: 16px;
+}
+
+
+.technologies {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.tech-butt {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}

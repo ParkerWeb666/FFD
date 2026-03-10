@@ -5,9 +5,9 @@ import Tg from "../../assets/icons/tg.svg?react";
 
 import React from "react";
 import "./button.css";
-const TgLogo = motion(Tg);
-const MailLogo = motion(Mail);
-const GithubLogo = motion(Github);
+const TgLogo = motion.create(Tg);
+const MailLogo = motion.create(Mail);
+const GithubLogo = motion.create(Github);
 function Button() {
   return (
     <div className="button-social">
