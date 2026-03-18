@@ -15,7 +15,7 @@ function Portfolio() {
     },
   };
   return (
-    <div className="portfolio-container">
+    <div className="portfolio-container" id="portfolio">
       <div className="portfolio">
         <div className="portfolio-head">
           <h2>Портфолио</h2>

@@ -16,7 +16,7 @@ function Review() {
     },
   };
   return (
-    <div className="review-container">
+    <div className="review-container" id="review">
       <div className="lines-bg"></div>
       <section className="review">
         <div className="review-head">

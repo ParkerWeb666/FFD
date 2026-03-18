@@ -5,22 +5,74 @@ import { motion } from "framer-motion";
 
 function Footer() {
   return (
-    <div className="footer-container">
+    <div className="footer-container" id="footer">
       <div className="footer">
         <div className="navigation">
           <div className="nav-info">
             <h4>Frontend Developer</h4>
             <p>
-              Создаю современные веб-приложения, <br />которые помогают бизнесу расти
+              Создаю современные веб-приложения, <br />
+              которые помогают бизнесу расти
             </p>
           </div>
           <div className="nav-nav">
             <div className="nav-title">
               <h5>Навигация</h5>
               <nav>
-                <a href="#Services">Услуги</a>
-                <a href="#Portfolio">Портфолио</a>
-                <a href="#Partnership">Контакты</a>
+                <a
+                  onClick={() =>
+                    document
+                      .getElementById("start")
+                      .scrollIntoView({ behavior: "smooth" })
+                  }
+                >
+                  Главная
+                </a>
+                <a
+                  onClick={() =>
+                    document
+                      .getElementById("services")
+                      .scrollIntoView({ behavior: "smooth" })
+                  }
+                >
+                  Услуги
+                </a>
+                <a
+                  onClick={() =>
+                    document
+                      .getElementById("technologies")
+                      .scrollIntoView({ behavior: "smooth" })
+                  }
+                >
+                  Технологии
+                </a>
+                <a
+                  onClick={() =>
+                    document
+                      .getElementById("portfolio")
+                      .scrollIntoView({ behavior: "smooth" })
+                  }
+                >
+                  Портфолио
+                </a>
+                <a
+                  onClick={() =>
+                    document
+                      .getElementById("whyme")
+                      .scrollIntoView({ behavior: "smooth" })
+                  }
+                >
+                  Почему Я
+                </a>
+                <a
+                  onClick={() =>
+                    document
+                      .getElementById("review")
+                      .scrollIntoView({ behavior: "smooth" })
+                  }
+                >
+                  Отзывы
+                </a>
               </nav>
             </div>
           </div>

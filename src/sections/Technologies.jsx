@@ -22,7 +22,7 @@ function Technologies() {
   
 
   return (
-    <div className="technologies-container">
+    <div className="technologies-container" id="technologies">
       <section className="technologies">
         <div className="tech-head">
           <h2>Технологии</h2>

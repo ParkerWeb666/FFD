@@ -15,7 +15,7 @@ function Whyme() {
     },
   };
   return (
-    <div className="whyme-container">
+    <div className="whyme-container" id="whyme">
       <div className="whyme">
         <div className="back-glare1"></div>
         <div className="back-glare2"></div>

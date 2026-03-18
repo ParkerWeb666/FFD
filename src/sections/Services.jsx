@@ -8,6 +8,7 @@ import { useState } from "react";
 import InfoPopup from "../components/ui/infoPopup.jsx";
 import { useEffect } from "react";
 
+
 export default function Services() {
   const [activeItem, setActiveItem] = useState(null);
   const container = {
@@ -21,13 +22,23 @@ export default function Services() {
   };
 useEffect(() => {
   if (activeItem) {
+    const scrollbarWidth =
+      window.innerWidth - document.documentElement.clientWidth;
+
     document.body.style.overflow = "hidden";
+    document.body.style.paddingRight = `${scrollbarWidth}px`;
   } else {
     document.body.style.overflow = "auto";
+    document.body.style.paddingRight = "0px";
   }
+
+  return () => {
+    document.body.style.overflow = "auto";
+    document.body.style.paddingRight = "0px";
+  };
 }, [activeItem]);
   return (
-    <div className="services-container">
+    <div className="services-container" id="services">
       <div className="dots-bg"></div>
       <section className="services">
         <div className="title">
@@ -48,6 +59,7 @@ useEffect(() => {
           {cards.map((card) => (
             <Card
               key={card.id}
+              id={card.id}
               title={card.title}
               description={card.description}
               image={card.image}

@@ -46,7 +46,7 @@ function Partnership() {
       });
   };
   return (
-    <div className="partnership-container">
+    <div className="partnership-container" id="partnership">
       <section className="partnership">
         <div className="partnership-head">
           <h2>Начнем сотрудничество</h2>

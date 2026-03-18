@@ -19,20 +19,24 @@ function Button() {
           scale: 1.1,
         }}
         whileTap={{ scale: 0.95 }}
-        //   onHoverStart={() => console.log("hover started!")}
+        onClick={() => window.open("https://t.me/parker4556", "_blank")}
       >
         <TgLogo />
       </motion.button>
       <motion.button
         className="butt-social"
         whileHover={{
-          // backgroundColor: "#323f5d",
           rotate: 5,
           scale: 1.1,
           background: "linear-gradient(135deg, #ff46e0, #b764fb)",
         }}
         whileTap={{ scale: 0.95 }}
-        //   onHoverStart={() => console.log("hover started!")}
+        onClick={() => {
+          const link = document.createElement("a");
+          link.href =
+            "mailto:example@example.com?subject=Привет&body=Текст письма";
+          link.click();
+        }}
       >
         <MailLogo />
       </motion.button>
@@ -40,12 +44,11 @@ function Button() {
         className="butt-social"
         whileHover={{
           background: "linear-gradient(135deg, #8aff46, #64c4fb)",
-
           rotate: 5,
           scale: 1.1,
         }}
         whileTap={{ scale: 0.95 }}
-        //   onHoverStart={() => console.log("hover started!")}
+        onClick={() => window.open("https://github.com/ParkerWeb666", "_blank")}
       >
         <GithubLogo />
       </motion.button>

@@ -57,6 +57,11 @@
   
 }
 
+.nav-title a:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
 .nav-info{
   display: flex;
   flex-direction: column;

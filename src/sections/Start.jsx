@@ -1,5 +1,4 @@
 import { motion } from "motion/react";
-import { Typed } from "react-typed";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { nightOwl } from "react-syntax-highlighter/dist/esm/styles/prism";
 import FloatingCode from "../components/ui/floatingCode.jsx";
@@ -8,7 +7,6 @@ import React from "react";
 import "./Start.css";
 
 function Start() {
-
   const container = {
     hidden: {},
     visible: {
@@ -19,7 +17,7 @@ function Start() {
     },
   };
   return (
-    <div className="container">
+    <div className="container" id="start">
       <section className="start">
         <div className="glare1"></div>
         <div className="glare2"></div>
@@ -48,17 +46,26 @@ function Start() {
           </p>
           <div className="start-buttons">
             <motion.button
+              onClick={() =>
+                document
+                  .getElementById("partnership")
+                  .scrollIntoView({ behavior: "smooth" })
+              }
               className="primary-button"
               whileHover={{
                 scale: 1.1,
                 boxShadow: "0px 5px 8px rgb(41, 212, 255, 0.5)",
               }}
               whileTap={{ scale: 0.95 }}
-              //   onHoverStart={() => console.log("hover started!")}
             >
               Начать проект
             </motion.button>
             <motion.button
+            onClick={() =>
+                document
+                  .getElementById("portfolio")
+                  .scrollIntoView({ behavior: "smooth" })
+              }
               className="secondary-button"
               whileHover={{
                 backgroundColor: "#1D293D",
@@ -73,12 +80,12 @@ function Start() {
           </div>
           <Button />
         </div>
-        <motion.div className="right-side"
-        variants={container}
+        <motion.div
+          className="right-side"
+          variants={container}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          
         >
           <div className="gradient-console">
             <div className="base-console">
@@ -99,12 +106,12 @@ function Start() {
                     style={{ background: "#00C950" }}
                   ></div>
                 </div>
-                
+
                 <SyntaxHighlighter
-                variants={{
-              hidden: { scale: 0 },
-              visible: {  scale: 1 },
-            }}
+                  variants={{
+                    hidden: { scale: 0 },
+                    visible: { scale: 1 },
+                  }}
                   language="javascript"
                   style={nightOwl}
                   customStyle={{

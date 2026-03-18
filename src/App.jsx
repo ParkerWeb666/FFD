@@ -1,4 +1,6 @@
 import Footer from "./components/layout/Footer";
+import ScrollIndicator from "./components/layout/ScrollIndicator.jsx";
+
 
 import Partnership from "./sections/Partnership";
 import Portfolio from "./sections/Portfolio";
@@ -12,6 +14,8 @@ import "./App.css";
 function App() {
   return (
     <>
+      <ScrollIndicator />
+
       <main className="container">
         <Start />
         <Services />
@@ -21,7 +25,7 @@ function App() {
         <Review />
         <Partnership />
       </main>
-      <Footer/> 
+      <Footer/>
     </>
   );
 }
